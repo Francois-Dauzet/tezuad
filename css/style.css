@@ -1,0 +1,389 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+:root {
+  --c-white: rgb(245, 245, 245);
+  --c-black: rgb(10, 10, 10);
+}
+
+/* /////////////////////// nav /////////////////////// */
+
+.containerNav ul {
+  color: var(--c-white);
+  display: flex;
+  margin: 1% 2%;
+  list-style-type: none;
+  position: absolute;
+}
+
+.containerNav li {
+  margin: 0 22px;
+  font-size: 22px;
+  font-weight: 600;
+  transition: 0.6s;
+  text-transform: uppercase;
+}
+
+.containerNav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+
+  transition: 0.3s;
+}
+
+.containerNav li:hover {
+  transform: scale(1.4);
+}
+
+.containerNav a:hover {
+  transition: 0.3s;
+  color: var(--c-white);
+}
+
+/* /////////////////////// header /////////////////////// */
+
+.bgHeader {
+  background-image: url(../img/bgHeader.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.containerHeader {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  background-attachment: fixed;
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ___________________ header icon ___________________ */
+
+.containerIconHeader {
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
+  box-shadow: -1px 1px 88px -1px var(--c-black) inset;
+}
+
+.containerIconHeader img {
+  width: 150px;
+  transition: 1s;
+}
+
+.containerIconHeader img:hover {
+  transform: scale(1.4);
+  transition: 0.5s;
+}
+
+/* ___________________ header left ___________________ */
+
+.containerHeaderLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+/* ---------------------- icon ---------------------- */
+
+.containerHeaderLeft .iconNP {
+  width: 150px;
+  filter: invert(100%);
+  transition: 1s;
+}
+
+.containerHeaderLeft .iconNP:hover {
+  width: 150px;
+  filter: invert(30%);
+  transform: scale(1.4);
+  transition: 0.5s;
+}
+
+/* ---------------------- text ---------------------- */
+
+.containerHeaderLeft h1 {
+  color: var(--c-white);
+  font-size: 122px;
+}
+
+.containerHeaderLeft h2 {
+  color: var(--c-white);
+  font-size: 33px;
+}
+
+/* ___________________ Header Right ___________________ */
+
+.containerHeaderRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+/* ---------------------- Img ---------------------- */
+
+.containerHeaderRight .imgProfil {
+  width: 450px;
+  border: 2px solid white;
+  box-shadow: -1px 1px 44px -22px #f1f1f1;
+}
+
+/* /////////////////////// section /////////////////////// */
+
+section {
+  height: 100vh;
+}
+
+section p {
+  color: white;
+  font-size: 18px;
+}
+
+.containerSectionTitle {
+  height: 15vh;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
+.containerSectionTitle h3 {
+  color: var(--c-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.containerSectionBody {
+  margin-top: 5vh;
+  height: 75vh;
+  background-color: rgba(0, 0, 0, 0.801);
+  display: flex;
+}
+
+/* ___________________ section biographie ___________________ */
+
+.titleBiographie {
+  box-shadow: -11px 11px 22px -11px #0163da33;
+}
+
+.bgsection1 {
+  background-image: url(../img/bgSection1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.containerPresentation {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 3% 6%;
+  box-shadow: -1px 1px 88px -1px #0161da33;
+}
+
+.containerSectionLeft {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+}
+
+.containerSectionLeft img {
+  width: 250px;
+  border: 2px solid white;
+  box-shadow: -1px 1px 88px -1px #f1f1f133;
+}
+
+.containerSectionRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  padding-right: 10%;
+}
+
+.containerSectionRight p {
+  padding: 20px;
+}
+
+/* ___________________ section nouveautés ___________________ */
+
+.titleNew {
+  box-shadow: -11px 11px 22px -11px #8dff1133;
+}
+
+.bgsection2 {
+  background-image: url(../img/bgSection2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.containerNew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.containerNew img {
+  height: 450px;
+  margin: 0 50px;
+  box-shadow: -1px 1px 44px -1px #8dff1133;
+  transition: 0.6s;
+}
+
+.containerNew img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  box-shadow: -1px 1px 44px -1px #f1f1f133;
+}
+
+/* ___________________ section discographie ___________________ */
+
+.titleDiscographie {
+  box-shadow: -11px 11px 22px -11px #56492533;
+}
+
+.bgsection3 {
+  background-image: url(../img/bgSection3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.container2021 img {
+  width: 250px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.container2021 img:hover {
+  filter: invert(50%);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.container2021 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.darkBg {
+  height: 90%;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: -1px 1px 44px -11px #56492533;
+  padding: 0 10px;
+}
+
+.containerIframe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transition: 0.5s;
+}
+
+iframe {
+  box-shadow: -1px 1px 44px -1px #f1f1f133;
+}
+
+.containerIframe h4 {
+  color: var(--c-white);
+  font-size: 38px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #564925;
+}
+
+.hidden {
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.displaySlide {
+  display: none;
+}
+
+/* iframe{
+  width="660"
+  height="415"
+} */
+
+@media (max-width: 1000px) {
+  .container-header {
+    flex-direction: column;
+  }
+  .containerHeaderRight .imgProfil {
+    display: none;
+  }
+  .containerIconHeader {
+    flex-wrap: wrap;
+  }
+
+  .containerIconHeader img {
+    margin: 1px;
+  }
+  .containerHeaderLeft h1 {
+    font-size: 100px;
+  }
+  .containerSectionLeft {
+    display: none;
+  }
+  .containerSectionRight {
+    width: 100%;
+    padding: 0;
+  }
+  .containerNew {
+    flex-direction: column;
+    height: 100%;
+  }
+  .hiddenResponsive {
+    display: none;
+  }
+  iframe {
+    width: 360px;
+    height: 215px;
+  }
+  .containerIconHeader {
+    height: auto;
+  }
+  .containerNav ul {
+    display: none;
+  }
+  .container2021 {
+    flex-direction: column-reverse;
+  }
+  .container2021 img {
+    width: 80px;
+  }
+}
